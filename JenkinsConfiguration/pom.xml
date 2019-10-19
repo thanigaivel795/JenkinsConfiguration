@@ -15,6 +15,7 @@
                         <version>2.22.0</version>
                        
                        <configuration>
+                       <forkMode>never</forkMode>
                               <suiteXmlFiles>
                                     <suiteXmlFile>./testng.xml</suiteXmlFile>
                               </suiteXmlFiles>
