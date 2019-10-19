@@ -14,17 +14,17 @@
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>3.0.0-M3</version>
                        
-                       <!--  <configuration>
+                       <configuration>
                               <suiteXmlFiles>
                                     <suiteXmlFile>testng.xml</suiteXmlFile>
                               </suiteXmlFiles>
-                              <systemPropertyVariables>
+                              <!-- <systemPropertyVariables>
                                     <url>${url}</url>
                               </systemPropertyVariables>
                               <groups>${groups}</groups>
-                              <testFailureIgnore>true</testFailureIgnore>
+                              <testFailureIgnore>true</testFailureIgnore> -->
                         
- </configuration> -->
+ </configuration> 
                   </plugin>
                   <!-- Compiler plugin configures the java version to be usedfor compiling
                         the code -->
