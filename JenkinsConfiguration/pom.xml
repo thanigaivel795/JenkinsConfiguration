@@ -15,7 +15,6 @@
                         <version>2.22.0</version>
                        
                        <configuration>
-                       <classesDirectory>${project.build.outputDirectory}</classesDirectory>
                               <suiteXmlFiles>
                                     <suiteXmlFile>testng.xml</suiteXmlFile>
                               </suiteXmlFiles>
