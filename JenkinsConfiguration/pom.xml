@@ -3,20 +3,7 @@
   <groupId>JenkinsConfiguration</groupId>
   <artifactId>JenkinsConfiguration</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
-  <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-<dependencies>  
-<dependency>
-    <groupId>io.github.bonigarcia</groupId>
-    <artifactId>webdrivermanager</artifactId>
-    <version>3.6.1</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>3.141.59</version>
-    <build>
+   <build>
 <!-- Source directory configuration -->
 
 <plugins>
@@ -47,6 +34,19 @@
             </plugins>
 
 </build>
+  <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<dependencies>  
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>3.6.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.141.59</version>
+   
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
