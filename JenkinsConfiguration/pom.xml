@@ -4,28 +4,36 @@
   <artifactId>JenkinsConfiguration</artifactId>
   <version>0.0.1-SNAPSHOT</version>
    <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.3</version>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.18.1</version>
-        <configuration>
-          <forkCount>0</forkCount>
-          <suiteXmlFiles>
-            <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+<!-- Source directory configuration -->
+
+<plugins>
+                  <!-- Following plugin executes the testng tests -->
+                  <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.14.1</version>
+                        <configuration>
+                              <suiteXmlFiles>
+                                    <suiteXmlFile>testng.xml</suiteXmlFile>
+                              </suiteXmlFiles>
+                              <systemPropertyVariables>
+                                    <url>${url}</url>
+                              </systemPropertyVariables>
+                              <groups>${groups}</groups>
+                        </configuration>
+                  </plugin>
+                  <!-- Compiler plugin configures the java version to be usedfor compiling
+                        the code -->
+                  <plugin>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <configuration>
+                              <source>1.6</source>
+                              <target>1.6</target>
+                        </configuration>
+                  </plugin>
+            </plugins>
+
+</build>
   <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 <dependencies>  
 <dependency>
